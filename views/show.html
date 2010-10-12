@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{image.created_at}}{% endblock %}
+{% block main %}
+<div class="fun">
+<p class="tagline">
+FOTORATAN(图藤) &ndash; Simple Beautiful iMage Gallery Hosted on Google App Engine
+</p>
+<div class="rt-btn"><a href="/#main" title="Image List" class="super white awesome button"><span>List</span></a> <a href="/admin/upload/" title="Upload" class="super green awesome button"><span>Upload!</span></a></div>
+<div class="clear"></div>
+</div>
+{% if image %}
+<div id="showimg">
+<a href="/image/{{image.id}}/" target="_black">
+<img  src="/image/{{image.id}}/" alt="{{image.name}}" /></a>
+<br />
+<dl>
+<dt>{{image.name}}</dt>
+<dd>
+<ul>
+<li>type: {{image.filetype}}</li>
+<li>tall: {{image.width}}*{{image.height}}</li>
+<li>fat: {{image.size|filesizeformat}}</li>
+<li>born: {{image.created_at}}</li>
+</ul>
+{% if admin %}<a href="/admin/del/{{image.key}}" class="red awesome button"><span>DELETE</span></a>{% endif %}
+</dd>
+</dl>
+</div>
+
+<hr />
+<div class="share">
+
+<dl class="code">
+<dt>image URL</dt>
+<dd>
+<p><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以粘贴到MSN、QQ、邮件中发送给您朋友。</p>
+<input value="{{image.showurl}}" name="qq" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+
+<dl class="code">
+<dt>HTML Code</dt>
+<dd>
+<p><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以嵌入到网站html或BLOG中使用。</p>
+<input value="&lt;img src=&quot;{{image.imgurl}}&quot;  /&gt;" name="blog" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+
+<dl class="code">
+<dt>UBB Code</dt>
+<dd>
+<p><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以在大部分论坛中使用，原图。</p>
+<input value="[img]{{image.imgurl}}[/img]" name="bbs" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+</div>
+{% endif %}
+{% endblock %}
+</body>
+</html>

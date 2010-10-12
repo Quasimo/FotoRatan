@@ -1,0 +1,65 @@
+#main{
+   margin: 10px auto;
+   margin-bottom: 0;
+   width: 960px; 
+}
+#album{
+margin: 10px;
+}
+#album li{
+width: 145px;
+height: 145px;
+border: 1px solid #EFF4F9;
+background-color: #F8FAFD;
+text-align: center;
+overflow: hidden;
+margin: 10px;
+float: left;
+}
+#album li img{
+margin: 10px;
+}
+#uploadpanle {
+width: 600px;
+margin: 20px auto;
+color: #959595;
+}
+#footer{
+text-align: center;
+}
+.rt-btn .button{
+visibility: visible;
+}
+.footnote{
+font-size: 12px;
+margin-bottom: 20px;
+}
+.page-nav{
+margin: 10px 20px;
+background: #f9fcf9;
+}
+dl.code dd p {
+display: block;
+}
+#showimg{
+margin-top: 10px;
+}
+
+
+#site-name{
+width: 960px;
+margin: 0 auto;
+}
+#menu ul{
+width: 960px;
+margin: 0 auto;
+border: none;
+}
+.error-msg-4ipad{
+display: none;
+}
+
+#menu{
+	padding-bottom: 0;
+	margin-top: 0;
+}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{image.created_at}}{% endblock %}
+{% block main %}
+<h2><a href="/" title="图片列表">图片列表</a>  <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
+{% if image %}
+<div id="showimg">
+<a href="/image/{{image.id}}/" target="_black">
+<img  src="/image/{{image.id}}/" alt="{{image.name}}" /></a>
+<br />
+<dl>
+<dt><strong>图片信息</strong></dt>
+<dd>文件类型:{{image.filetype}}</dd>
+<dd>分辨率:{{image.width}}*{{image.height}}</dd>
+<dd>图片大小:{{image.size|filesizeformat}}</dd>
+<dd>上传时间:{{image.created_at}}</dd>
+<dd>{% if admin %}<a href="/admin/del/{{image.key}}">删除</a>{% endif %}</dd>
+</dl>
+</div>
+<dl class="code">
+<dt><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以嵌入到BLOG中使用，并可以点击查看全图。</dt>
+<dd><input value="&lt;img src=&quot;{{image.imgurl}}&quot;  /&gt;" name="blog" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+
+<dl class="code">
+<dt><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以粘贴到MSN、QQ、邮件中发送给您朋友。</dt>
+<dd><input value="{{image.imgurl}}" name="qq" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+
+<dl class="code">
+<dt><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以在大部分论坛中使用，原图。</dt>
+<dd><input value="[img]{{image.imgurl}}[/img]" name="bbs" onclick="copyCode(this);return false;" type="text" /></dd>
+</dl>
+{% endif %}
+{% endblock %}
+</body>
+</html>

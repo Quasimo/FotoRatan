@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}GAE图片分享{% endblock %}
+{% block main %}
+<h2>图片列表  <a href="/admin/upload2/" title="上传图片">上传图片</a></h2>
+<ul id="album">
+	{% for image in images %}<li><a href="/show/{{image.id}}/"><img src="/s/{{image.id}}/"/></a></li>{% endfor %}
+</ul>
+<h2 id="page">{% if prev %}<a href="{{prev}}">上一页</a>{% endif%}  {%if next%}<a href="{{next}}">下一页</a>{% endif %}</h2>
+{% endblock %}
+</body>
+</html>

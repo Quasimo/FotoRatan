@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{image.created_at}}{% endblock %}
+{% block main %}
+<h2 class="panel-tit"><span>Upload Image</span></h2>
+<div id="uploadpanle">
+<p>Select your image file and upload</p>
+  <form id="upload_form" action="/admin/upload/" enctype="multipart/form-data" method="post">
+    <div class="selete"><input type="file" name="file" id="file" /></div>
+    <div><input type="submit" value="Upload" class="super white button awesome" /></div>
+  </form>  
+
+<ul class="note">
+<li class="error-msg-4ipad">Upload function DOSE NOT support in iPhone / iPad Yet for <a href="http://geekaa3.appspot.com/t/198" target="_blank">Some Reasons</a></li>
+<li>maximum file size: <strong>1M</strong></li>
+<li>image types allowed: <strong>jpeg</strong>, <strong>jpg</strong>, <strong>png</strong>, <strong>gif</strong></li>
+</ul>
+</div>
+{% endblock %}
+</body>
+</html>

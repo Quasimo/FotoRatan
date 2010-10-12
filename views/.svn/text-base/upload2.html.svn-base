@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大菠萝多文件上传</title>
+<style type="text/css">
+ul, ol {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+padding:0;
+}
+
+#fileList{
+	border:1px solid #AFE14C;
+}
+#fileList legend{
+	color:#73B304;
+	font-size:14px;
+}
+
+#uploadPanal{
+	width:40%;
+	float:left;
+}
+#imgPanal{
+	width:59%;
+	float:right;
+}
+
+.filename{
+float:left;
+color:#555555;
+width:300px;
+}
+.filestate{
+float:right;
+font-size:7pt;
+color:#999999;
+}
+#btnUpload{
+clear:both;
+margin-left: 2px; 
+font-size: 8pt; 
+height: 29px;
+width:50px;
+}
+#showResult{
+clear:both;
+}
+#imglist li{
+width:85px;
+height:85px;
+float:left;
+}
+#imglist img{
+height:75px;
+width:75px;
+border:0;}
+</style>
+<script type="text/javascript" src="/static/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="/static/swfupload/handlers.js"></script>
+<script type="text/javascript">
+		var swfu;
+		window.onload = function () {
+			swfu = new SWFUpload({
+				// Backend Settings
+				upload_url: "/admin/upload2/",	// Relative to the SWF file or absolute
+
+				// File Upload Settings
+				file_size_limit : "1 MB",	// 2MB
+				file_types : "*.jpg;*.png;*.gif",
+				file_types_description : "Web Image Files",
+				file_upload_limit : "0",
+
+				// Event Handler Settings - these functions as defined in Handlers.js
+				//  The handlers are not part of SWFUpload but are part of my website and control how
+				//  my website reacts to the SWFUpload events.
+				file_queued_handler:fileQueued,
+				file_queue_error_handler : fileQueueError,
+				file_dialog_complete_handler : fileDialogComplete,
+				upload_progress_handler : uploadProgress,
+				upload_error_handler : uploadError,
+				upload_success_handler : uploadSuccess,
+				upload_complete_handler : uploadComplete,
+
+				// Button Settings
+				button_image_url: "/static/images/select.png",	// Relative to the Flash file
+				button_width: "61",
+				button_height: "22",
+				button_placeholder_id: "btnSelect",
+
+				
+				// Flash Settings
+				flash_url : "/static/swfupload/swfupload.swf",
+
+				
+				// Debug Settings
+				debug: false
+			});
+		};
+	</script>
+</head>
+<body>
+<div id="uploadPanal">
+<form id="uploadForm" action="/">
+<fieldset id="fileList">
+<legend>Upload Queue</legend>
+<ul id="cFileList">
+</ul>
+</fieldset>
+<span id="showResult"></span><br />
+<div style="width: 61px; height: 22px; margin-bottom: 10px;">
+    <span id="btnSelect"></span>
+</div>
+<p>点击”Upload“选择图片，可以使用Ctrl或Shift多选。</p>
+<p>那位帮忙美化下界面呀!!!联系我邮箱ben###119797.com</p>
+</form>
+</div>
+<div id="imgPanal">
+<ul id="imglist">
+</ul>
+</div>
+</body>
+</html>

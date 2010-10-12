@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="fun">
+<p class="tagline">
+<strong>FOTORATAN<span class="cn-name">(图藤)</span></strong> &ndash; Simple iMage Gallery Hosted on Google App Engine.
+</p>
+<div class="rt-btn">
+<a href="/admin/upload/" title="Upload" class="super green awesome button"><span>Upload!</span></a>
+</div>
+<div class="clear"></div>
+</div>
+<ul id="album">
+	{% for image in images %}
+	<li><a href="/show/{{image.id}}/"><img src="/s/{{image.id}}/"/></a></li>{% endfor %}
+</ul>
+<div class="clear"></div>
+<p class="page-nav">{% if prev %}<a href="{{prev}}" class="white awesome button">&laquo; Prev</a>{% endif%}  {%if next%}<a href="{{next}}" class="white awesome button">Next &raquo;</a>{% endif %}</p>
+{% endblock %}
+</body>
+</html>
