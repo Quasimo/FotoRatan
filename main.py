@@ -64,30 +64,12 @@ class Error(PublicPage):
 class AboutPage(PublicPage):
     def get(self):
         template_value={}
-        self.render('views/about.html', template_value) 
-
-class PlansPage(PublicPage):
-    def get(self):
-        template_value={}
-        self.render('views/plans.html', template_value) 
-        
-class ContactPage(PublicPage):
-    def get(self):
-        template_value={}
-        self.render('views/contact.html', template_value)
-       
-class TourPage(PublicPage):
-    def get(self):
-        template_value={}
-        self.render('views/tour.html', template_value)                       
+        self.render('views/about.html', template_value)                       
 
 def main():
     application = webapp.WSGIApplication(
                                        [('/(?P<page>[0-9]*)/?', MainPage),
                                        	('/about', AboutPage),
-                                       	('/plans', PlansPage),
-                                       	('/contact', ContactPage),
-                                       	('/tour', TourPage),
                                         (r'/(?P<size>image)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/(?P<size>s)/(?P<id>[0-9]+)/?',GetImage),
                                         (r'/show/(?P<id>[0-9]+)/',ShowImage),
