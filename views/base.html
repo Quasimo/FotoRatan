@@ -19,6 +19,8 @@
 		<!--[if IE 7]><link rel="stylesheet" href="/static/stylesheets/ie7.css" type="text/css" media="screen"><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" href="/static/stylesheets/ie6.css" type="text/css" media="screen"><![endif]-->
 		
+		<link href="/static/themes/ratanapp/style.css" rel="stylesheet" type="text/css" media="screen" /
+		
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 		<script type="text/javascript" src="/static/main.js"></script>
 	</head>
@@ -35,13 +37,17 @@
     		<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
-				<!-- <li><a href="/pricing">Pricing</a></li>
-				<li><a href="/fourm">Fourm</a></li> -->
+				<li><a href="/plans">Plans and Pricing</a></li>
+				<li><a href="/tour">Tour</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<!-- <li><a href="/fourm">Fourm</a></li> -->
 			</ul>
 			</div>
 			<div class="clear"></div>	
     	</div>
     	<!-- header end -->
+    	
+    	{% block featured %}{% endblock %}
     	
     	<div class="container">
         <div id="main">

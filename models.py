@@ -7,7 +7,7 @@ class Images(db.Model):
     mime = db.StringProperty()
     size = db.IntegerProperty()
     created_at = db.DateTimeProperty(auto_now_add=True)
-    description = db.StringProperty()
+    description = db.TextProperty()
     width = db.IntegerProperty()
     height = db.IntegerProperty()
     filetype=db.StringProperty()

@@ -3,9 +3,9 @@
 {% block main %}
 <h2 class="panel-tit"><span>Upload Image</span></h2>
 <div id="uploadpanle">
-<p>Select your image file and upload</p>
   <form id="upload_form" action="/admin/upload/" enctype="multipart/form-data" method="post">
-    <div class="selete"><input type="file" name="file" id="file" /></div>
+    <div class="selete">Select image: <input type="file" name="file" id="file" /></div>
+    <div class="description"><span>Description: </span><textarea name="description" cols="40" rows="3"></textarea></div>
     <div><input type="submit" value="Upload" class="super white button awesome" /></div>
   </form>  
 

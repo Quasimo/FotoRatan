@@ -12,13 +12,13 @@ FOTORATAN(图藤) &ndash; Simple Beautiful iMage Gallery Hosted on Google App En
 <div id="showimg">
 <a href="/image/{{image.id}}/" target="_black">
 <img  src="/image/{{image.id}}/" alt="{{image.name}}" /></a>
-<br />
+<p class="descripton">{{image.description}}</p>
 <dl>
 <dt>{{image.name}}</dt>
 <dd>
 <ul>
 <li>type: {{image.filetype}}</li>
-<li>tall: {{image.width}}*{{image.height}}</li>
+<li>shape: {{image.width}} x {{image.height}}</li>
 <li>fat: {{image.size|filesizeformat}}</li>
 <li>born: {{image.created_at}}</li>
 </ul>
@@ -41,7 +41,7 @@ FOTORATAN(图藤) &ndash; Simple Beautiful iMage Gallery Hosted on Google App En
 <dt>HTML Code</dt>
 <dd>
 <p><a href="#" onclick="copyCode(this);return false;">复制分享地址</a> 可以嵌入到网站html或BLOG中使用。</p>
-<input value="&lt;img src=&quot;{{image.imgurl}}&quot;  /&gt;" name="blog" onclick="copyCode(this);return false;" type="text" /></dd>
+<input value="&lt;img src=&quot;{{image.imgurl}}&quot; /&gt;" name="blog" onclick="copyCode(this);return false;" type="text" /></dd>
 </dl>
 
 <dl class="code">

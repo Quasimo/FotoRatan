@@ -39,14 +39,16 @@ Usage
 
 Need Some Help!
 ---------------
+* Larger Than 1Mb Upload Per File.
+	*now just 1Mb, it's small.*
 * Multiple Uploader
-** You can try http://YOUR-APP-URL/admin/upload2/ but it dosen't works.
+	*You can try http://YOUR-APP-URL/admin/upload2/ but it dosen't works.*
 * Multiple User
-** Now you can invite other developers to collaborate on your application is [appengine](https://appengine.google.com/) dashboard > Administration > Permissions , then the developers are be able to upload images in your app, but User A can delete images that upload by User B now, I wish there some permissions to save one user's images that never deleted by others.
+	*Now you can invite other developers to collaborate on your application is [appengine](https://appengine.google.com/) dashboard > Administration > Permissions , then the developers are be able to upload images in your app, but User A can delete images that upload by User B now, I wish there some permissions to save one user's images that never deleted by others.*
 * Site Configurator
-** To generate site infomations like title and descriptions, to create pages, to switch themes.
+	*To generate site infomations like title and descriptions, to create pages, to switch themes.*
 * Theme
-** in static/themes
+	*in static/themes*
 
 Quota and Performance
 ---------------------
@@ -58,7 +60,8 @@ FotoRatan under [GNU Lesser General Public License](http://www.gnu.org/licenses/
 
 Special Thanks
 --------------
-* [Livid](http://github.com/livid) *I love his works and this README is copies somethings from [Project Babel 2](http://github.com/livid/v2ex/blob/master/README.md)*
 * [Benmao](http://github.com/benmao) *He created diabloimage that FotoRatan is base on.*
+* [Livid](http://github.com/livid) *I love his works and this README is copies somethings from [Project Babel 2](http://github.com/livid/v2ex/blob/master/README.md)*
+* [ZRUB](http://www.zurb.com) *[Absolutly, I love ZURB](http://geekaa3.appspot.com/t/201), I use the CSS3 buttons from them in FotoRatan.*
 * [Fennel](http://chagallsilk.blogbus.com/) *Always support my works.*
 * [Hgta](http://geekaa3.appspot.com/member/hgta) *Comrade in arms in these years.*

@@ -143,3 +143,16 @@ input.awesome{
 	color: #666;
 	text-shadow: 0 1px -1px #fff;		
 }
+
+.blue.awesome:hover {
+background-color: #007D9A;
+}
+
+.orange.awesome:hover {
+background-color: #D45500;
+}
+
+.white.awesome:hover {
+	color: #333 !important;
+	color: #333;
+}

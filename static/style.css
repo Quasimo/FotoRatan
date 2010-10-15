@@ -5,10 +5,10 @@ body{
 }
 
 a{
-	color: #7b4c20;
+	color: #1084C6;
 }
 a:hover{
-	color: #f60;
+	color: #369;
 }
 
 hr{
@@ -130,9 +130,9 @@ width: 0px;
 	margin: 10px;
 }
 
-.rt-btn .button{
+/*.rt-btn .button{
 	visibility: hidden;	
-}
+}*/
 
 #album{
 	margin: 5px;
@@ -154,15 +154,19 @@ width: 0px;
 }
 
 .panel-tit{
-	background-color: #ccc;	background-color: #B5B5B5;
+	background-color: #e1e1e1;	
 	border-top: 1px solid #f1f1f1;
-	border-bottom: 1px solid #959595;
+	border-bottom: 1px solid #ccc;
 	padding: 3px 10px;
 	font-size: 14px;
-	color: #fff;
-	text-shadow: #666 1px 1px 1px;
+	color: #959595;
+	text-shadow: #fff 1px 1px 1px;
 	border-top-left-radius: 5px 5px;
-		border-top-right-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+
+#uploadpanle p{
+	font-size: 12px;
 }
 
 #uploadpanle {
@@ -176,11 +180,11 @@ width: 0px;
 
 #uploadpanle div.selete{
 	color: #959595;
-	margin: 10px;
+	margin: 10px 0;
 }
 
-#uploadpanle div.selete input{
-	color: #959595;
+#uploadpanle div.description span{
+	display: block
 }
 
 #uploadpanle ul.note {
@@ -315,9 +319,45 @@ span.cn-name{
 	color: #f30;
 }
 
+a.help{
+	cursor: help
+}
+
+.rightcolumn {
+float: right;
+padding-left: 0px;
+text-align: left;
+width: 48%;
+
+}
+
+.leftcolumn {
+float: left;
+padding-right: 0px;
+text-align: left;
+width: 48%;
+}
+
+quote{
+	font-style: italic;
+	font-weight: bold;
+}
+
+p.descripton{
+	font-size: 12px;
+	color: #959595;
+}
+
 /*
 	The "Desktop" layout
 */
+
+@media all and (max-width:480px){
+	.rt-btn .button{
+	visibility: hidden;	
+	}
+}
+
  @media all and (min-width:481px){
  	#main{
  		width: 700px;
@@ -344,6 +384,7 @@ span.cn-name{
 	width: 600px;
 	margin: 20px auto;
 	color: #959595;
+	font-size: 12px;
 	}
 	#footer{
 	text-align: center;
