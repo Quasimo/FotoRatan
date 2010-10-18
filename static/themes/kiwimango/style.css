@@ -1,0 +1,67 @@
+body{
+	background:#f1f1f1 url(http://tone-sum.appspot.com/image/1/) top left;
+	color: #665D51;
+}
+
+a{
+	color: #CD6F54;
+}
+a:hover{
+	color: #8E9C6D;
+}
+
+#header{
+	border-bottom: 1px solid #7C949C;
+	background-color: #F5F3E6;
+}
+
+#logo{
+	background-color: #9DBBC4;
+	padding: 10px;
+	border-bottom: 1px solid #e1e1ee;
+	border-top: 1px solid #c1c1cc;
+	font-size: 18px;
+}
+
+#menu{
+	background:#D2C6A6;
+	margin-top: 0;
+	border-bottom: 1px solid #7C949C;
+	font-size: 14px;
+}
+
+#menu ul{
+	margin: 0 auto;
+	border: none;
+}
+
+#menu li{
+	float: left;
+}
+#menu li a{
+	background-color: #F5F3E6;	
+	color: #8E9C6D;
+	text-decoration: none;
+	text-shadow: #fff 1px 1px 1px;
+	display: block;
+	padding: 2px 10px;
+	margin: 1px;
+}
+
+#menu li a:hover{
+	display: block;
+	color: #CD6F54;
+}
+
+#footer p{
+	color: #6F665B
+}
+
+#footer a{
+	color: #CC6B50
+}
+
+#footer a:hover{
+	color: #8E9C6D;
+}
+

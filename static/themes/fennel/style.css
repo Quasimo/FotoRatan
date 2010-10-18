@@ -1,0 +1,91 @@
+body{
+	background:#f1f1f1 url(bg.jpg) top center;
+	color: #665D51;
+}
+
+a{
+	color: #5D818C;
+}
+a:hover{
+	color: #38486A;
+}
+
+#header{
+	border-bottom: 1px solid #38486A;
+	background: url(hd.png) top left;
+	background-color: transparent;
+}
+
+#logo{
+	background-color: transparent;
+	
+	padding: 10px;
+	border-bottom: 1px solid #5a7a9e;
+	border-top: 1px solid #c1c1cc;
+	font-size: 18px;
+
+}
+
+#site-name{
+	vertical-align: baseline;
+	font-size: 24px;
+	margin-top: 50px;
+}
+
+#logo a{
+	color: #fff;
+	text-shadow: #000 1px 1px 10px;
+}
+
+#logo a:hover{
+	color: #fff;
+	text-shadow: #fff 1px 1px 100px;
+}
+
+#menu{
+	background:#38486A;
+	margin-top: 0;
+	border-bottom: 1px solid #5a7a9e;
+	font-size: 14px;
+	filter: Alpha(opacity=80);   
+   	-moz-opacity:.8;   
+   	opacity:0.8;  
+}
+
+#menu ul{
+	margin: 0 auto;
+	border: none;
+}
+
+#menu li{
+	float: left;
+}
+#menu li a{
+	background-color: #38486A;	
+	color: #ccc;
+	text-decoration: none;
+	text-shadow: #000 1px 1px 1px;
+	display: block;
+	padding: 2px 8px;
+	margin: 3px;
+}
+
+#menu li a:hover{
+	display: block;
+	color: #fff;
+	text-shadow: #fff 1px 1px 10px;
+}
+
+#footer p{
+	color: #acacac;
+	text-shadow: #333 1px 1px 1px
+}
+
+#footer a{
+	color: #D1CE99
+}
+
+#footer a:hover{
+	color: #82D18F;
+}
+

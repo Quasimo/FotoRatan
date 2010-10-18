@@ -1,0 +1,68 @@
+body{
+	background: #EDF7E7;
+}
+
+a{
+color: #79974C
+}
+a:hover{
+color: #BF523B
+}
+
+#footer{
+color: #886
+}
+
+#footer a{
+color: #79974C
+}
+
+#footer a:hover{
+color: #BF523B
+}
+
+#album li {
+background-color: #fff;
+border: 1px solid #fcfcfc;
+float: none;
+height: 620px;
+margin: 10px auto;
+overflow: hidden;
+text-align: center;
+width: 820px;
+-webkit-box-shadow: #cecece 0px 2px 10px;
+box-shadow: 0px 2px 10px #cecece;
+-moz-box-shadow: 0px 2px 10px #cecece; 
+padding: 10px 0;
+background: url(xzbg.png) top left;
+}
+
+.page-nav{
+text-align: center;
+background: #fff;
+margin: 10px auto;
+}
+
+#logo{
+background: #BF523B;
+border-color: #000;
+border-bottom: 1px solid #f1f1f1;
+}
+
+#menu{
+background: #DF856E;
+-webkit-box-shadow: #ccc 0px 5px 20px;
+box-shadow: 0px 5px 20px #ccc;
+-moz-box-shadow: 0px 5px 20px #ccc; 
+border-color: #BF523B;
+}
+
+#menu ul li a{
+background: #DF856E;
+color: #fff
+}
+
+#menu ul li a:hover{
+color: #ac523B;
+text-shadow: #fefefe 1px 1px 1px;
+}

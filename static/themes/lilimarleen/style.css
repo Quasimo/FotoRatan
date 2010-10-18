@@ -1,0 +1,61 @@
+body{
+background: url(bg.jpg) top left;
+}
+
+a{
+color: #7ED0D6
+}
+a:hover{
+color: #4E9689
+}
+
+#logo{
+background: #7ED0D6;
+border-color: #4E9689;
+}
+
+#footer{
+color: #666
+}
+
+#footer a{
+color: #545454
+}
+
+#footer a:hover{
+color: #4E9689
+}
+
+#menu{
+background: #71BAC0;
+border-bottom-color: #71ccc0;
+}
+
+#menu ul li a{
+background: #71BAC0;
+color: #f1f1f1
+}
+
+#menu ul li a:hover{
+background: #71BAC0;
+color: #fff;
+text-shadow: #fff 1px 1px 10px;
+}
+
+#header{
+border-bottom-color: #46867B;
+}
+
+#album li {
+background: #F4FCE8;
+border: 1px solid #DBE2D0;
+}
+
+#site-name a{
+color: #fcfcfc
+}
+
+#site-name a:hover{
+color: #fff;
+text-shadow: #fff 1px 1px 10px;
+}
