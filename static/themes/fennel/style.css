@@ -18,7 +18,7 @@ a:hover{
 
 #logo{
 	background-color: transparent;
-	
+
 	padding: 10px;
 	border-bottom: 1px solid #5a7a9e;
 	border-top: 1px solid #c1c1cc;
@@ -47,9 +47,9 @@ a:hover{
 	margin-top: 0;
 	border-bottom: 1px solid #5a7a9e;
 	font-size: 14px;
-	filter: Alpha(opacity=80);   
-   	-moz-opacity:.8;   
-   	opacity:0.8;  
+	filter: Alpha(opacity=80);
+   	-moz-opacity:.8;
+   	opacity:0.8;
 }
 
 #menu ul{
@@ -61,7 +61,7 @@ a:hover{
 	float: left;
 }
 #menu li a{
-	background-color: #38486A;	
+	background-color: #38486A;
 	color: #ccc;
 	text-decoration: none;
 	text-shadow: #000 1px 1px 1px;

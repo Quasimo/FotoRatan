@@ -76,7 +76,7 @@ width: 0px;
 	float: left;
 }
 #menu li a{
-	background-color: #663a0f;	
+	background-color: #663a0f;
 	color: #ccc;
 	text-decoration: none;
 	text-shadow: #222 1px 1px 1px;
@@ -101,7 +101,7 @@ width: 0px;
 		border-bottom-left-radius: 5px 5px;
 		border-bottom-right-radius: 5px 5px;
 		border-top-left-radius: 5px 5px;
-		border-top-right-radius: 5px 5px;	
+		border-top-right-radius: 5px 5px;
 }
 
 .fun .tagline{
@@ -131,7 +131,7 @@ width: 0px;
 }
 
 /*.rt-btn .button{
-	visibility: hidden;	
+	visibility: hidden;
 }*/
 
 #album{
@@ -154,7 +154,7 @@ width: 0px;
 }
 
 .panel-tit{
-	background-color: #e1e1e1;	
+	background-color: #e1e1e1;
 	border-top: 1px solid #f1f1f1;
 	border-bottom: 1px solid #ccc;
 	padding: 3px 10px;
@@ -241,7 +241,7 @@ div.share {
 }
 
 .share dl.code{
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 dl.code dd input {
@@ -249,7 +249,7 @@ dl.code dd input {
 }
 
 dl.code dd p {
-	color: #959595;	
+	color: #959595;
 	display: none;
 }
 
@@ -354,7 +354,7 @@ p.descripton{
 
 @media all and (max-width:480px){
 	.rt-btn .button{
-	visibility: hidden;	
+	visibility: hidden;
 	}
 }
 
@@ -405,14 +405,14 @@ p.descripton{
 	}
 	#showimg{
 	margin-top: 10px;
-	}		
-} 
+	}
+}
 
  @media all and (min-width:800px){
 	#main{
 	   margin: 10px auto;
 	   margin-bottom: 0;
-	   width: 960px; 
+	   width: 960px;
 	}
 	#site-name{
 	width: 960px;
@@ -425,6 +425,5 @@ p.descripton{
 	}
 	.error-msg-4ipad{
 	display: none;
-	}					
-} 
-	
+	}
+}
