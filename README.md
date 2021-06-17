@@ -62,6 +62,6 @@ Special Thanks
 --------------
 * [Benmao](http://github.com/benmao) *He created diabloimage that FotoRatan is base on.*
 * [Livid](http://github.com/livid) *I love his works and this README is copies somethings from [Project Babel 2](http://github.com/livid/v2ex/blob/master/README.md)*
-* [ZRUB](http://www.zurb.com) *[Absolutly, I love ZURB](http://geekaa3.appspot.com/t/201), I use the CSS3 buttons from them in FotoRatan.*
+* [ZRUB](http://www.zurb.com) *[Absolutely, I love ZURB](http://geekaa3.appspot.com/t/201), I use the CSS3 buttons from them in FotoRatan.*
 * [Fennel](http://chagallsilk.blogbus.com/) *Always support my works.*
 * [Hgta](http://geekaa3.appspot.com/member/hgta) *Comrade in arms in these years.*
